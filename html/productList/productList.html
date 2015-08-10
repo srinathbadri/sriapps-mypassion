@@ -1,0 +1,53 @@
+<!--<html>
+
+<head>
+<link href="../common/css/ionic.min.css" rel="stylesheet">
+<script src="../common/js/ionic.bundle.js"></script>
+
+<link href="productList.css" rel="stylesheet">
+<script src="productListController.js"></script>
+<script src="productListFactory.js"></script>
+
+
+<script src="../common/js/headerModuleApp.js"></script>
+<script src="../common/controller/deluxeHeaderController.js"></script>
+<script src="../common/directive/deluxeHeaderDirective.js"></script>
+<script src="../common/js/angular.ng-modules.js"></script>
+<link href="../common/css/common.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+<ion-view>
+    <ion-content >
+        <div ng-module="deluxeHeader" ng-controller="deluxeHeaderController">
+            <div deluxe-header pagetitle="Product List"></div>
+        </div>
+        &lt;!&ndash;<div style="height:25px"></div>&ndash;&gt;
+
+            <div ng-module="productList"  ng-controller="productListController">-->
+
+            <div ng-repeat="product in products track by $index" class="product imageContainer">
+                <div class="productContainer">
+                    <div class="promo">{{product.productId}}</div>
+                    <center>
+                        <div>
+                            <img class="productImage" ng-src="{{product.imageURL.smallImageURL}}" alt="{{product.productName}}"><br/>
+                        </div>
+                        <div class="productDetails">
+                            {{product.productName}} <br/>
+                            Qty/Price : {{product.quantityPrice[0].quantity}}/{{product.quantityPrice[0].price | currency}}
+                        </div>
+                    </center>
+                </div>
+
+            </div>
+<!--
+
+            </div>
+
+</ion-content>
+    </ion-view>
+</body>
+</html>-->

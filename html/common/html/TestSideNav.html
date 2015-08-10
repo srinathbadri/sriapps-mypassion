@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <link href="../../css/ionic.min.css" rel="stylesheet">
+    <script src="../../js/ionic.bundle.js"></script>
+
+    <script src="../../userlogin/js/app.js"></script>
+
+    <script src="../controller/userLoginController.js"></script>
+    <script src="../factory/userLoginFactory.js"></script>
+
+    <script src="../controller/deluxeHeaderController.js"></script>
+    <script src="../directive/deluxeHeaderDirective.js"></script>
+    <script src="../../userlogin/js/angular.ng-modules.js"></script>
+</head>
+<body ng-app="">
+<ion-content class="padding">
+
+    <div ng-module="deluxeHeader" ng-controller="deluxeHeaderController">
+        <div deluxe-header></div>
+    </div>
+</ion-content>
+</body>
+</html>
